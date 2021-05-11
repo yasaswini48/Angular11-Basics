@@ -1,0 +1,16 @@
+<div class="container text-center">
+     <!-- Items came from child -->
+     <h4 class="head4">Items Selected:{{gotItemsArr.length==0 ? " None " : gotItemsArr.length }}  </h4>
+     <div style="font-size: 22px; color: cyan;">
+      <p  *ngIf="gotItemsArr.length!=0"  class="d-inline" >List of Items Selected:</p>
+      <div  class="d-inline" *ngFor="let item of gotItemsArr">
+        {{item}} ,
+      </div>
+     </div>
+     <!-- The cards or products shown -->
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+         <div *ngFor="let pr of productArr" class="col">      <!--Looping thorugh array and send data to child-->
+            <app-product-details [prObj]=pr (sendEvent)="gotFromChild($event)" ></app-product-details>   <!--Passing data to child-->
+         </div>
+     </div>
+</div>

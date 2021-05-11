@@ -1,0 +1,10 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<div class="card bg-dark text-white mt-3 shadow-lg">
+    <img src='{{prObj.productImage}}' height="300px" style="border: none; border-radius: 4px;" alt="">   <!--Displaying-->
+    <div class="card-body">
+        <h4> {{prObj.productTitle}} </h4>
+        <p> {{prObj.productData}} </p> 
+        <button class="btn btn-info" (click)="sendToParent(prObj.productTitle)"><i class="fas fa-cart-plus me-2"></i>   Add To Cart</button>
+    </div>
+</div>
