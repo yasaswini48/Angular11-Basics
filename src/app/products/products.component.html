@@ -1,0 +1,11 @@
+<!--Array cards,sending data to child  -->
+<div class="text-center text-warning mt-4 ">
+    <h2 class="display-5"><i class="fas fa-tags me-3"></i>Shopping Items Available</h2>
+</div>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    <!-- looping through array of products and displaying the content  -->
+    <div *ngFor="let product of productArr" class="col">
+        <!-- selector of child component -->
+        <app-product-details [obj]=product ></app-product-details>    <!--The obj in child is reciving and iterator of loop is passing data-->
+    </div>
+</div>
