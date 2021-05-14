@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -10,6 +10,9 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
+import { BikesComponent } from './bikes/bikes.component';
+import { TelivisionsComponent } from './telivisions/telivisions.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     ContactusComponent,
     ProductsComponent,
     FooterComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    MobilesComponent,
+    BikesComponent,
+    TelivisionsComponent
   ],
   imports: [
     BrowserModule,
