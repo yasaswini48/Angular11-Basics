@@ -1,0 +1,15 @@
+li
+{
+    background-color: lightcoral;
+    border: none;
+    border-radius: 4px;
+}
+a
+{
+    color:white;
+}
+.nav-link:focus
+{
+    background-color: #4CD7D0;
+    box-shadow: 3px 3px 0px #FFAEBC;
+}

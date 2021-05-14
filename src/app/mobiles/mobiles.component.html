@@ -1,1 +1,6 @@
-<p>mobiles works!</p>
+<!-- Sending the array of mobiles to product-details -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    <div class="col" *ngFor="let mobileObj of mobilesArr">
+        <app-product-details [obj]=mobileObj ></app-product-details>
+    </div>
+</div>
